@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Read Only by HTML5 UP</title>
+		<title>Danny López Game Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,27 +16,44 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<span class="image avatar"><img src="images/avatar2.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">Danny López</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
+					<p style="font-size: 19px;">I'm a Unity developer with 2 years of experience, specializing in editor tools, interfaces, and game development. I'll work hard to take your project to the next level!</p>
 				</header>
+				
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
 						<li><a href="#two">Things I Can Do</a></li>
 						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Contact</a></li>
+						<!-- <li><a href="#four">Contact</a></li> -->
 					</ul>
 				</nav>
 				<footer>
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li>
+							<a href="#" class="icon solid fa-envelope" data-clipboard-text="danny.lopezc00@gmail.com" onclick="copyToClipboard(this); return false;">
+								<span class="label">Email</span>
+							</a>
+						</li>
+						<li><a href="https://github.com/DannyLopezC" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/dannylopezc/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.upwork.com/freelancers/~01296b48eac7c01974?s=1110580755233755136" target="_blank" class="no-underline"><span class="label">Up</span></a></li>
 					</ul>
+
+					<script>
+						function copyToClipboard(element) {
+							var text = element.getAttribute('data-clipboard-text');
+							var input = document.createElement('input');
+							input.value = text;
+							document.body.appendChild(input);
+							input.select();
+							document.execCommand('copy');
+							document.body.removeChild(input);
+							alert('Correo electrónico copiado al portapapeles: ' + text);
+						}
+					</script>
+
 				</footer>
 			</section>
 
@@ -49,51 +66,57 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="" />
+									<img src="images/banner3.jpg" alt="" />
 								</div>
-								<div class="container">
+								<div class="container" style="max-height: 400px;">
 									<header class="major">
-										<h2>Read Only</h2>
-										<p>Just an incredibly simple responsive site<br />
-										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+										<h2>Unity Game Developer</h2>
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<p style="margin-bottom: -15px;"></p>
+									<h4>
+										<p>Experienced Unity Game Developer proficient in C# and character design. Skilled in creating engaging in-game mechanics and efficient development tools. Strong track record in both studio and freelance environments. Passionate about pushing the boundaries of interactive entertainment.</p>
+									</h4>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul>
-								</div>
-							</section>
+						<section id="two">
+							<div class="container" style="max-height: 400px;">
+								<h2>Things I Can Do</h2>
+								<p style="margin-bottom: 50px;"></p> <!-- Agrega un espacio con un margen inferior de 20px -->
+								<ul class="feature-icons">
+									<h5>
+										<li class="icon solid fa-gamepad">Develop engaging games</li>
+										<li class="icon solid fa-cogs">Create efficient tools</li>
+										<li class="icon solid fa-laptop-code">Write clean code</li>
+										<li class="icon solid fa-paint-brush">Design beautiful interfaces</li>
+										<li class="icon solid fa-users">Collaborate with teams</li>
+										<li class="icon solid fa-lightbulb">Innovate and problem-solve</li>
+									</h5>
+								</ul>
+							</div>
+						</section>
+						
 
 						<!-- Three -->
 							<section id="three">
 								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<h2>A Few Accomplishments</h2>
+									<p style="margin-bottom: 30px;"></p>
+									<p>These are some of the projects I've worked on, which I can proudly showcase to the public. I'm particularly excited about the fact that I've also authored some of them.
+										They demonstrate my skills and expertise in action.</p>
 									<div class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
+												<h4>Dungeon Shop</h4>
 												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
 											</div>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
+												<h4>Fast Reactions Game</h4>
 												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
 											</div>
 										</article>
@@ -109,7 +132,7 @@
 							</section>
 
 						<!-- Four -->
-							<section id="four">
+							<!-- <section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
@@ -129,7 +152,7 @@
 									</form>
 								</div>
 							</section>
-
+ -->
 						<!-- Five -->
 						<!--
 							<section id="five">
@@ -464,13 +487,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-					<section id="footer">
+					<!-- <section id="footer">
 						<div class="container">
 							<ul class="copyright">
 								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
-					</section>
+					</section> -->
 
 			</div>
 
