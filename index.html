@@ -16,11 +16,71 @@
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar2.jpg" alt="" /></span>
+					<span class="image avatar">
+					  <a href="#" onclick="openImageModal('images/avatar2.jpg')">
+						<img src="images/avatar2.jpg" alt="" />
+					  </a>
+					</span>
 					<h1 id="logo"><a href="#">Danny López</a></h1>
-					<p style="font-size: 19px;">I'm a Unity developer with 2 years of experience, specializing in editor tools, interfaces, and game development. I'll work hard to take your project to the next level!</p>
-				</header>
-				
+					<p style="font-size: 19px;">Soy un desarrollador de Unity con 2 años de experiencia, especializado en herramientas del editor, interfaces y desarrollo de juegos. ¡Trabajaré arduamente para llevar tu proyecto al siguiente nivel!</p>
+				  </header>
+				  
+				  <!-- JavaScript -->
+				  <script>
+					function openImageModal(imageUrl) {
+					  var modal = document.createElement('div');
+					  modal.classList.add('image-modal');
+				  
+					  var closeButton = document.createElement('div');
+					  closeButton.classList.add('close-button');
+					  closeButton.innerHTML = '&#10005;'; // Equix en código HTML
+					  closeButton.addEventListener('click', closeModal);
+				  
+					  var image = document.createElement('img');
+					  image.src = imageUrl;
+				  
+					  modal.appendChild(closeButton);
+					  modal.appendChild(image);
+					  document.body.appendChild(modal);
+					}
+				  
+					function closeModal() {
+					  var modal = document.querySelector('.image-modal');
+					  document.body.removeChild(modal);
+					}
+				  </script>
+				  
+				  <!-- CSS -->
+				  <style>
+					.image-modal {
+					  position: fixed;
+					  top: 50%;
+					  left: 50%;
+					  transform: translate(-50%, -100%);
+					  background-color: #ffffff00;
+					  border: 1px solid #cccccc00;
+					  padding: 10px;
+					  z-index: 9999;
+					  max-width: 25%;
+					  max-height: 25%;
+					}
+				  
+					.image-modal img {
+					  max-width: 100%;
+					  height: auto;
+					}
+				  
+					.close-button {
+					  position: absolute;
+					  top: 12px;
+					  right: 25px;
+					  font-size: 18px;
+					  cursor: pointer;
+					}
+				  </style>
+				  
+				  
+
 				<nav id="nav">
 					<ul>
 						<li><a href="#one" class="active">About</a></li>
@@ -119,7 +179,7 @@
 											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 											<div class="inner">
 												<h4>Fast Reactions Game</h4>
-												<p>This is the final version of a mini-project designed to assess your reaction skills through a game. It serves as a platform to showcase your abilities and gauge your proficiency in real-time responses.</p>
+												<p>This is the final version of a mini-project designed to evaluate your reaction skills through a game. It serves as a platform to demonstrate your abilities and measure your proficiency in real-time responses.</p>
 											</div>
 										</article>
 										<article>
