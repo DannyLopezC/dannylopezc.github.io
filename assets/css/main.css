@@ -2049,7 +2049,7 @@ input, select, textarea {
 		}
 
 		.link-text {
-			color: rgb(60, 60, 241); /* Set the text color to blue */
+			color: rgb(16, 156, 119); /* Set the text color to blue */
 			text-decoration: underline; /* Underline the text to indicate it's a link */
 			cursor: pointer; /* Change cursor to a pointer on hover */
 			margin: 0; /* Remove margin to align with the image */
@@ -2065,17 +2065,6 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-	}
-
-	.image img:hover {
-		transform: scale(1.1);
-		transition: transform 0.3s;
-		cursor: pointer;
-	}
-
-	.image img:hover:not(:hover) {
-		transform: scale(1);
-		transition: transform 1s;
 	}
 
 		.image[data-position] img {
