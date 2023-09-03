@@ -2067,6 +2067,17 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.image img:hover {
+		transform: scale(1.1);
+		transition: transform 0.3s;
+		cursor: pointer;
+	}
+
+	.image img:hover:not(:hover) {
+		transform: scale(1);
+		transition: transform 1s;
+	}
+
 		.image[data-position] img {
 			-moz-object-fit: cover;
 			-webkit-object-fit: cover;
